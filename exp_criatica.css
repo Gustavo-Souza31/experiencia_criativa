@@ -10,6 +10,8 @@
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center; 
+    image-resolution: from-image;
+    image-rendering: auto;
     color: #fff;
     padding: 2rem;
     text-align: center;
