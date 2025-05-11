@@ -29,13 +29,13 @@
     .restaurant {
       background: #fff;
       border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px #4b1d1d;
       margin-bottom: 2rem;
       overflow: hidden;
     }
 
     .restaurant h2 {
-      background: #3b82f6;
+      background: #4b1d1d;
       color: white;
       margin: 0;
       padding: 1rem;
