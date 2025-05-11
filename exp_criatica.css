@@ -7,11 +7,10 @@
 
     header {
     background-image: url(imagens/restaurante.jpg);
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    image-resolution: from-image;
-    image-rendering: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(50%); 
     color: #fff;
     padding: 2rem;
     text-align: center;
@@ -41,7 +40,7 @@
     }
 
     .restaurant h2 {
-      background: #3b82f6;
+      background: #4b1d1d;
       color: white;
       margin: 0;
       padding: 1rem;
