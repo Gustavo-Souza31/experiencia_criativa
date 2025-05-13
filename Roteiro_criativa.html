@@ -43,6 +43,18 @@
         <a href="https://www.instagram.com/theoxsteakhouses/?igsh=amdoZWdtMGhoNTdz#" target="_blank">
   <img src="imagens/instagram.png" alt="Instagram" style="width: 20px; height: 20px; vertical-align: middle;"> Venha nos conhecer
 </a>
+<div class="carousel">
+  <div class="carousel-images">
+    <img src="imagens/ox01.jpg" alt="Restaurante 1">
+    <img src="imagens/ox02.jpg" alt="Restaurante 2">
+    <img src="imagens/ox03.jpeg" alt="Restaurante 3">
+    <img src="imagens/ox04.jpg" alt="Restaurante 4">
+    <img src="imagens/ox05.jpg" alt="Restaurante 5">
+    <img src="imagens/ox06.jpg" alt="Restaurante 6">
+  </div>
+  <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+  <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+</div>
         
       </div>
     </section>
@@ -165,10 +177,30 @@
         </tbody>
       </table>
     </section>
-  </main>
+   </main>
 
   <footer>
     <p>© 2025 Guia Gastronômico de Curitiba</p>
   </footer>
+  <script>
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      const slides = document.querySelector('.carousel-images');
+      const totalSlides = slides.children.length;
+
+      currentIndex = (index + totalSlides) % totalSlides;
+
+      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    function nextSlide() {
+      showSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentIndex - 1);
+    }
+  </script>
 </body>
 </html>
