@@ -184,16 +184,21 @@
   </footer>
  <script>
     let currentIndex = 0;
-
+    
     function showSlide(index) {
       const slides = document.querySelector('.carousel-images');
       const totalSlides = slides.children.length;
-
-    
-      currentIndex = (index + totalSlides) % totalSlides;
-
-    
+      if (index < 0){
+        currentIndex = totalSlides / 2 - 1
+      }
+      else{
+        currentIndex = (index + totalSlides) % totalSlides;
+        if (currentIndex >= totalSlides / 2){
+          currentIndex = 0
+        }
+      }
       slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        
   }
 
   function nextSlide() {
