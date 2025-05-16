@@ -69,13 +69,13 @@ header p {
     .restaurant {
       background: #fff;
       border-radius: 10px;
-      box-shadow: 0 2px 5px #4b1d1d;
+      box-shadow: 0 2px 5px #7c2d12;
       margin-bottom: 2rem;
       overflow: hidden;
     }
 
     .restaurant h2 {
-      background: #4b1d1d;
+      background: #7c2d12;
       color: white;
       margin: 0;
       padding: 1rem;
@@ -90,21 +90,38 @@ header p {
       padding-left: 1.5rem;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1rem;
-    }
+    /* TABELAS */
 
-    th, td {
-      padding: 0.75rem;
-      text-align: left;
-      border: 1px solid #ccc;
-    }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
 
-    th {
-      background-color: #e2e8f0;
-    }
+th,
+td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+th {
+  background-color: #f1f5f9;
+  font-weight: 600;
+  color: #1e293b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+tr:hover {
+  background-color: #f9fafb;
+}
 
     footer {
       background-color: #1e293b;
@@ -118,21 +135,21 @@ header p {
     position: relative;
     max-width: 100%;
     margin: 2rem auto;
-    overflow: hidden; /* Garante que apenas as imagens visíveis sejam exibidas */
+    overflow: hidden; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .carousel-images {
     display: flex;
-    transition: transform 0.5s ease-in-out; /* Suaviza a transição entre as imagens */
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-images img {
-    width: 100%; /* Faz com que as imagens ocupem toda a largura do carrossel */
-    max-height: 300px; /* Define uma altura máxima para as imagens */
-    flex-shrink: 0; /* Garante que as imagens não encolham */
-    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorção */
+    width: 100%; 
+    max-height: 300px; 
+    flex-shrink: 0; 
+    object-fit: cover;
 }
 
 .carousel-button {
@@ -151,9 +168,9 @@ header p {
     background-color: rgba(0, 0, 0, 0.8);
 }
 .carousel-images img {
-    width: 90%; /* Ajusta a largura para ocupar todo o espaço do carrossel */
-    max-height: 300px; /* Define uma altura máxima para as imagens */
-    max-width: 50%; /* Garante que a imagem não ultrapasse a largura do carrossel */
-    height: auto; /* Mantém a proporção da imagem */
-    object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente para caber */
+    width: 90%; 
+    max-height: 300px; 
+    max-width: 50%; 
+    height: auto;
+    object-fit: cover;
 }
